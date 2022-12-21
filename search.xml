@@ -10,4 +10,137 @@
 <p>先说这些吧，以后会不定时更新博客，希望大家多多评论提出宝贵意见。蟹蟹大家！</p>
 ]]></content>
   </entry>
+  <entry>
+    <title>数理统计期末考试题1</title>
+    <url>/%E6%95%B0%E5%AD%A6/%E6%9C%AC%E7%A7%91%E6%95%B0%E5%AD%A6/%E6%95%B0%E7%90%86%E7%BB%9F%E8%AE%A1/20221221-undefined/</url>
+    <content><![CDATA[<h3 id="一"><a href="#一" class="headerlink" title="一"></a>一</h3><blockquote>
+<p>$X \sim N(\mu,\sigma^2),\sigma &#x3D; 500$,$\mu$未知。以$\overline{X}$作为$\mu$的估计，以0.95的概率保证$\lvert \overline{X}-\mu \rvert &lt;50$,求样本容量的最小值。</p>
+</blockquote>
+<p>由<br>$$<br>P(\lvert \overline{X}-\mu \rvert &lt;50)&#x3D;0.95<br>$$</p>
+<p>得<br>$$<br>P(\lvert \frac{\overline{X}-\mu}{\sigma&#x2F;\sqrt{n}} \rvert &lt;\frac{50}{\sigma &#x2F;\sqrt{n}})&#x3D;0.95.<br>$$<br>代入题目中的数据可知，$n\geq271$,则样本容量最小为271.</p>
+<h3 id="二"><a href="#二" class="headerlink" title="二"></a>二</h3><blockquote>
+<p>$X\sim \mu(0,1),n&#x3D;5.$求常数$c$使得$P(X_{(1)}\leq c)&#x3D;P(X_{(5)}\geq c)$.</p>
+</blockquote>
+<p>由于$X$服从均匀分布，$F(x) &#x3D; x,0\leq x \leq 1$,则<br>$$<br>F_{X_{(1)}}&#x3D;1-[1-F(x)]^{5}&#x3D;1-(1-x)^{5}<br>$$</p>
+<p>$$<br>F_{X_{(5)}}&#x3D;[F(x)]^{5}&#x3D;x^{5}<br>$$</p>
+<p>由题意得，<br>$$<br>1-(1-c)^{5}&#x3D;1-c^{5}<br>$$</p>
+<p>$$<br>c&#x3D;\frac{1}{2}.<br>$$</p>
+<h3 id="三"><a href="#三" class="headerlink" title="三"></a>三</h3><blockquote>
+<p>$X$满足</p>
+<table>
+<thead>
+<tr>
+<th align="center">$X$</th>
+<th align="center">0</th>
+<th align="center">1</th>
+<th align="center">2</th>
+<th align="center">3</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">$P$</td>
+<td align="center">$\theta ^{2}$</td>
+<td align="center">$2\theta (1-\theta)$</td>
+<td align="center">$\theta ^{2}$</td>
+<td align="center">$1-2\theta$</td>
+</tr>
+</tbody></table>
+<p>其中$\theta$是参数($0&lt;\theta&lt;0.5$).样本：3,1,3,0,3,1,2,3.  </p>
+<p>求$\theta$的矩估计和极大似然估计。</p>
+</blockquote>
+<p>$EX&#x3D;2\theta(1-\theta)+2\theta ^{2}+3(1-2\theta)&#x3D;3-4\theta$  </p>
+<p>$EX &#x3D; \overline{X},\overline{X}&#x3D;2$  </p>
+<p>$\hat{\theta}<em>{1} &#x3D; \frac{1}{4}$<br>$$<br>L(\theta) &#x3D; \prod</em>{i&#x3D;1}^{n} p_{i}(x,\theta)&#x3D;2\theta^{5}(1-\theta)(1-2\theta)<br>$$</p>
+<p>$$<br>\frac{d \ln L(\theta)}{d \theta} &#x3D; 5-18\theta+14\theta^{2}<br>$$</p>
+<p>$L(\theta)$取极大值时，$\hat{\theta}_{2}&#x3D;\frac{9-\sqrt{11}}{14}$</p>
+<p>###四</p>
+<blockquote>
+<p>$X\sim N(\mu,2.5^2).x_{1},x_{2},…,x_{n},iid.H_{0}:\mu &#x3D; 12;H_1:\mu&#x3D;13.W &#x3D; {(x_{1},x_{2},…,x_{n}) \rvert \overline{X}&gt;12.45 }.$</p>
+<p>1.求$\alpha,\beta$.</p>
+<p>2.若$\beta&lt;0.01,$求$n$的最小值。</p>
+<p>3.证明$n \to +\infty $,有$\alpha,\beta \to0$.</p>
+</blockquote>
+<ol>
+<li></li>
+</ol>
+<p>令$U &#x3D; \frac{\overline{X}-\mu}{\sigma &#x2F;\sqrt{n}},$则  </p>
+<p>$\alpha &#x3D; P(W \rvert H_0)&#x3D;P(U&gt;\frac{9}{50} \sqrt{n})&#x3D;1-\Phi(\frac{9}{50} \sqrt{n})$</p>
+<p>$\beta &#x3D; P(\overline{W}\rvert H_1)&#x3D;P(U\leq -\frac{11}{50} \sqrt{n})&#x3D;1-\Phi(\frac{11}{50} \sqrt{n})$</p>
+<ol start="2">
+<li></li>
+</ol>
+<p>由于$\beta \leq 0.01 \Rightarrow \Phi(\frac{11}{50} \sqrt{n}) \geq 0.99.$  </p>
+<p>则$n$最小值为109.</p>
+<ol start="3">
+<li></li>
+</ol>
+<p>显然。</p>
+<h3 id="五"><a href="#五" class="headerlink" title="五"></a>五</h3><blockquote>
+<p>已知$X,Y$是相关的变量，在一组样本中有</p>
+<table>
+<thead>
+<tr>
+<th align="center">143：88</th>
+<th align="center">145：85</th>
+<th align="center">146：88</th>
+<th align="center">147：91</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">149：92</td>
+<td align="center">150：93</td>
+<td align="center">153：93</td>
+<td align="center">154：95</td>
+</tr>
+<tr>
+<td align="center">155：96</td>
+<td align="center">156：98</td>
+<td align="center">157：97</td>
+<td align="center">158：96</td>
+</tr>
+<tr>
+<td align="center">159：98</td>
+<td align="center">160：99</td>
+<td align="center">162：100</td>
+<td align="center">164：102</td>
+</tr>
+</tbody></table>
+<p>1.求$Y$对$X$的回归方程；</p>
+<p>2.$\alpha &#x3D; 0.05.,H_0:\beta_1&#x3D;0;H_1:\beta_1 \neq 0.$</p>
+<p>3.$X&#x3D;155,求\hat{Y}$.</p>
+</blockquote>
+<ol>
+<li>​</li>
+</ol>
+<p>$l_{xy}&#x3D;438.625,l_{xx} &#x3D; 609.75,l_{yy} &#x3D; 339.9375.$  </p>
+<p>$\hat{\beta_{1}} &#x3D; \frac{l_{xy}}{l_{xx}} &#x3D; 0.72$  </p>
+<p>$\hat{\beta_0} &#x3D; \overline{y}-\hat{\beta_1}\overline{x}&#x3D;-16.07$  </p>
+<p>则回归方程为$Y &#x3D; 0.72X-16.07$</p>
+<ol start="2">
+<li></li>
+</ol>
+<p>$S_T&#x3D;l_{yy}&#x3D;339.9375,S_R &#x3D; \hat{\beta_1}^2l_{xx} &#x3D; 316.0944,S_e &#x3D; 23.8431$  </p>
+<p>$F&#x3D;\frac{S_R}{Se&#x2F;(n-2)}&#x3D;185.6&gt;F_\alpha(1,14)$  </p>
+<p>显著性成立</p>
+<ol start="3">
+<li></li>
+</ol>
+<p>$\hat{Y}&#x3D;95.53$</p>
+<h3 id="六"><a href="#六" class="headerlink" title="六"></a>六</h3><blockquote>
+<p>$X\sim N(\mu,\sigma^2).x_{1},x_{2},…,x_{n},iid.$试证明：$\overline{X}$是$\mu$的有效估计，$S^2$是$\sigma^2$的渐进有效估计。</p>
+</blockquote>
+<p>$$<br>\frac{\partial }{\partial \mu} [\ln \prod_{i&#x3D;1}^n f_i(x;\mu,\sigma^2)] &#x3D; \frac{n}{\sigma^2}(\overline{X}-\mu)<br>$$<br>又由$E\overline{X}&#x3D;\mu,D\overline{X} &#x3D; \frac{\sigma ^2}{n}$.<br>$$<br>D(\overline{X})&#x3D;\frac{1}{nI(\mu)}<br>$$<br>则$\overline{X}$是$\mu$的有效估计量。</p>
+<p>同理有<br>$$<br>DS^2 &#x3D; \frac{2\sigma^4}{n-1}&gt;\frac{2\sigma^4}{n}&#x3D;\frac{1}{nI(\sigma^2)}<br>$$<br>当$n\to +\infin $时 $DS^2 &#x3D; \frac{1}{nI(\sigma^2)}.$  </p>
+<p>则$S^2​$是$\sigma^2​$的渐进有效估计量</p>
+]]></content>
+      <categories>
+        <category>数学</category>
+        <category>本科数学</category>
+        <category>数理统计</category>
+      </categories>
+      <tags>
+        <tag>数学</tag>
+        <tag>数理统计</tag>
+      </tags>
+  </entry>
 </search>
