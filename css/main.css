@@ -1058,7 +1058,7 @@ pre .javascript .function {
   color: var(--brand-hover-color);
 }
 .site-title {
-  font-family: 'Gloria Hallelujah', 'Noto Serif SC', "PingFang SC", "Microsoft YaHei", sans-serif;
+  font-family: 'Dancing Script', 'Noto Serif SC', "PingFang SC", "Microsoft YaHei", sans-serif;
   font-size: 1.6em;
   font-weight: normal;
   margin: 0;
@@ -1241,7 +1241,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #ffd02f;
+  background: #050fb0;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
