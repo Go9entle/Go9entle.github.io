@@ -381,7 +381,7 @@ mjx-container[display="true"] + br {
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>652</span>
+              <span>647</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
@@ -402,20 +402,21 @@ mjx-container[display="true"] + br {
 
       
         <p><strong>文章结尾处的结束标志的添加。</strong></p>
-<ol type="1">
+<ol>
 <li><p>在博客根目录中<code>themes\hexo-theme-next\layout\_macro</code>中新建文件<code>passage-end-tag.swig</code>，其中的内容如下:</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span>&gt;</span></span><br><span class="line">    {% if not is_index %}</span><br><span class="line">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">"text-align:center;color: #ccc;font-size:14px;"</span>&gt;</span>------ 本文结束，感谢您的阅读！------<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    {% endif %}</span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure></li>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span>&gt;</span></span><br><span class="line">    {% if not is_index %}</span><br><span class="line">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">"text-align:center;color: #ccc;font-size:14px;"</span>&gt;</span>------ 本文结束，感谢您的阅读！------<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    {% endif %}</span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+</li>
 <li><p>打开<code>themes\hexo-theme-next\layout\_macro</code>中的<code>post.swig</code>文件，在</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">{#####################}</span><br><span class="line">{### END POST BODY ###}</span><br><span class="line">{#####################}</span><br></pre></td></tr></table></figure>
 <p>上方添加</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;div&gt;</span><br><span class="line">  {% if not is_index %}</span><br><span class="line">  {% include 'passage-end-tag.swig' %}</span><br><span class="line">  {% endif %}</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure></li>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;div&gt;</span><br><span class="line">  {% if not is_index %}</span><br><span class="line">  {% include 'passage-end-tag.swig' %}</span><br><span class="line">  {% endif %}</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure>
+</li>
 <li><p>打开<code>themes\hexo-theme-next\_config.yml</code>文件，在代码最后添加</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"># 文章末尾结束标记</span><br><span class="line">passage_end_tag:</span><br><span class="line">enabled: true</span><br></pre></td></tr></table></figure></li>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"># 文章末尾结束标记</span><br><span class="line">passage_end_tag:</span><br><span class="line">enabled: true</span><br></pre></td></tr></table></figure>
+</li>
 <li><p>效果展示</p>
-<figure>
-<img src="https://s2.loli.net/2022/12/22/68uW7PiVpGb2ayB.png" alt="这是效果图">
-<figcaption aria-hidden="true">这是效果图</figcaption>
-</figure></li>
+<p><img src="https://s2.loli.net/2022/12/22/68uW7PiVpGb2ayB.png" alt="这是效果图"></p>
+</li>
 </ol>
 
     </div>
@@ -647,13 +648,13 @@ mjx-container[display="true"] + br {
       <i class="fa fa-chart-area"></i>
     </span>
       <span class="post-meta-item-text">站点总字数：</span>
-    <span title="站点总字数">10k</span>
+    <span title="站点总字数">6k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
       <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
-    <span title="站点阅读时长">9 分钟</span>
+    <span title="站点阅读时长">5 分钟</span>
 </div>
 
 <br /> 
