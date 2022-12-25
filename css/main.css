@@ -221,7 +221,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Ma Shan Zheng', 'Noto Serif SC', "PingFang SC", "Microsoft YaHei", sans-serif;
+  font-family: 'ZCOOL XiaoWei', 'Noto Serif SC', "PingFang SC", "Microsoft YaHei", sans-serif;
   font-weight: bold;
   line-height: 1.5;
   margin: 20px 0 15px;
@@ -1241,7 +1241,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #958546;
+  background: #86b5d7;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
