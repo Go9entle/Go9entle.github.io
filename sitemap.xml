@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://gogentle.tk/posts/20221225.html</loc>
+    <loc>https://gogentle.tk/posts/yayun3.html</loc>
     
     <lastmod>2022-12-26</lastmod>
     
@@ -21,6 +21,15 @@
   
   <url>
     <loc>https://gogentle.tk/posts/4222.html</loc>
+    
+    <lastmod>2022-12-26</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://gogentle.tk/posts/20221225.html</loc>
     
     <lastmod>2022-12-26</lastmod>
     
@@ -259,14 +268,14 @@
   </url>
   
   <url>
-    <loc>https://gogentle.tk/categories/%E6%95%B0%E5%AD%A6/%E6%9C%AC%E7%A7%91%E6%95%B0%E5%AD%A6/%E5%BE%AE%E5%88%86%E5%87%A0%E4%BD%95/</loc>
+    <loc>https://gogentle.tk/categories/%E6%95%B0%E5%AD%A6/%E6%9C%AC%E7%A7%91%E6%95%B0%E5%AD%A6/%E6%95%B0%E7%90%86%E7%BB%9F%E8%AE%A1/</loc>
     <lastmod>2022-12-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://gogentle.tk/categories/%E6%95%B0%E5%AD%A6/%E6%9C%AC%E7%A7%91%E6%95%B0%E5%AD%A6/%E6%95%B0%E7%90%86%E7%BB%9F%E8%AE%A1/</loc>
+    <loc>https://gogentle.tk/categories/%E6%95%B0%E5%AD%A6/%E6%9C%AC%E7%A7%91%E6%95%B0%E5%AD%A6/%E5%BE%AE%E5%88%86%E5%87%A0%E4%BD%95/</loc>
     <lastmod>2022-12-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
