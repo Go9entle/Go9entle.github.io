@@ -2683,7 +2683,7 @@ hr {
   vertical-align: middle;
 }
 .links-of-author a::before {
-  background: #18ffff;
+  background: #ffffd7;
   display: inline-block;
   margin-right: 3px;
   transform: translateY(-2px);
@@ -2733,82 +2733,4 @@ hr {
 }
 .sub-menu .menu-item {
   display: inline-block;
-}
-.medium-zoom-image {
-  box-shadow: 0 10px 30px 0px rgba(0,0,0,0.4);
-}
-code {
-  background: #e3e1e8;
-  color: #383a42;
-}
-.headband {
-  display: none;
-}
-.footer-inner {
-  color: #494948;
-}
-.table-container {
-  scrollbar-width: thin;
-}
-.table-container::-webkit-scrollbar {
-  width: 0.5em;
-  height: 0.5em;
-}
-.table-container::-webkit-scrollbar-thumb {
-  border-radius: 4px;
-  background: #00af91;
-}
-.table-container::-webkit-scrollbar-track {
-  background: none;
-}
-.main-inner {
-  opacity: 0.95;
-}
-.sidebar {
-  opacity: 0.95;
-}
-.header-inner {
-  margin-top: 18px;
-  background: rgba(255,255,255,0.95);
-}
-.popup {
-  opacity: 0.95;
-}
-.main {
-  margin: 4px auto 0;
-}
-@media (max-width: 767px) {
-  .header {
-    padding: 4px;
-  }
-}
-.header-inner {
-  border-radius: 50px 50px 18px 18px;
-}
-.site-brand-container {
-  border-radius: 18px 18px 0 0;
-}
-@media (max-width: 767px) {
-  .site-brand-container {
-    border-radius: 18px;
-  }
-}
-.sidebar-inner {
-  border-radius: 18px;
-}
-.back-to-top {
-  border-radius: 0 0 18px 18px;
-}
-.post-block {
-  border-radius: 18px !important;
-  margin-top: 18px;
-}
-.pagination {
-  border-radius: 18px !important;
-}
-.comments {
-  border-radius: 18px !important;
-}
-.post-body {
-  font-size: 15px;
 }
