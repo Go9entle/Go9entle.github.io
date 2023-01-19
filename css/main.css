@@ -1277,7 +1277,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #ffffb8;
+  background: #0d9873;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -2635,7 +2635,7 @@ hr {
   display: inline-block;
 }
 body {
-  background: url("https://s2.loli.net/2023/01/19/NQzESd4LA9fHlha.png");
+  background: url("https://s2.loli.net/2023/01/19/Qk3rEel6taM1mYz.png");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: 50% 50%;
@@ -2651,5 +2651,33 @@ body {
   padding: 25px;
   -webkit-box-shadow: 0 0 5px rgba(202,203,203,0.75);
   -moz-box-shadow: 0 0 5px rgba(202,203,204,0.75);
-  opcity: 1;
+  opacity: 1;
+}
+.content .posts-expand .post-block {
+  position: relative;
+  margin-bottom: 30px;
+  padding: 40px 20px;
+  box-shadow: rgba(0,0,0,0.1) 0px 15px 35px 0px, rgba(0,0,0,0.31) 6px 6px 10px 0px;
+  border-radius: 20px;
+  background-color: #fff0f5;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+  transform-style: preserve-3d;
+}
+.post-expand .post-body {
+  position: relative;
+  overflow: visible;
+  padding: 20px;
+  color: #666;
+  font-size: 15px;
+  word-break: break-word;
+}
+.tag-cloud a {
+  box-shadow: 0 1px 3px #6f42c1, 0 1px 2px #d9534f;
+  padding: 2px 10px;
+  margin: 8px;
+  background: rgba(193,66,92,0);
+  border-bottom: none;
+  border-radius: 20px;
 }
